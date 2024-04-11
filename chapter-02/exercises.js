@@ -3,7 +3,7 @@
 // triangles ///////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function triangles() {
+function triangles(numberOfLines) {
   
     let line = '';
     for (let i = 0; i < numberOfLines; i++) {
@@ -18,8 +18,25 @@ function triangles() {
 // fizzBuzz ////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function fizzBuzz() {
-  
+function fizzBuzz(start, end) {
+  for (let i = start; i <= end; i++) {
+    // Check if the number is divisible by both 3 and 5
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("fizzbuzz");
+    }
+    // Check if the number is divisible by 3
+    else if (i % 3 === 0) {
+      console.log("fizz");
+    }
+    // Check if the number is divisible by 5
+    else if (i % 5 === 0) {
+      console.log("buzz");
+    }
+    // If none of the above, print the number
+    else {
+      console.log(i);
+    }
+  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////
